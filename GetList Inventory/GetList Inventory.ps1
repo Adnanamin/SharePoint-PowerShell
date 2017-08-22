@@ -39,5 +39,5 @@ function GetListInventory($siteUrl)
     $SiteDetail 
 }
 
-GetListInventory "http://mxwl-sp01" | Out-GridView 
-#GetListInventory "http://mxwl-spa01" |  Out-File "E:\FMT\ListInventory.csv"
+GetListInventory "http://SPFarm2016" | Out-GridView 
+#GetListInventory "http://SPFarm2016" |  Out-File "E:\FMT\ListInventory.csv"
