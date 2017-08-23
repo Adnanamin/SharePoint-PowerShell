@@ -19,7 +19,8 @@ function GetListInventory($siteUrl)
                 Add-member -inputObject $row -memberType NoteProperty -Name "Site Name" -value $web.Name
                 Add-member -inputObject $row -memberType NoteProperty -Name "URL" -value $web.Url
                 Add-member -inputObject $row -memberType NoteProperty -Name "List Title" -value $List.Title
-                Add-member -inputObject $row -memberType NoteProperty -Name "List Item Count" -value $list.Items.Count 
+                Add-member -inputObject $row -memberType NoteProperty -Name "List Item Count" -value $list.ItemCount
+				#Add-member -inputObject $row -memberType NoteProperty -Name "List Item Count" -value $list.Items.Count 
                 Add-member -inputObject $row -memberType NoteProperty -Name "Last Modified Date" -value $List.LastItemModifiedDate
                 if ($list.EnableVersioning -eq $TRUE) 
                 {
